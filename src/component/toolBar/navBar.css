@@ -1,0 +1,37 @@
+
+.toolbar{
+    background: rgb(160, 212, 167);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+
+}
+.spacer{
+    flex: 1;
+}
+.toolbar__navigation{
+display: flex;
+}
+
+.toolbar__navigation-items ul{
+    display: flex;
+    margin-left: 24px;
+    margin-right: 14px;
+}
+.toolbar__navigation-items li{
+list-style: none;
+margin-left: 12px;
+}
+.toolbar__navigation-items a{
+    text-decoration: none;
+    }
+    @media screen and (max-width:700px){
+        .toolbar__navigation-items{
+          display: none;
+        }
+        }
+
+
+
+

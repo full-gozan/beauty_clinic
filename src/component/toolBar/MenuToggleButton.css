@@ -1,0 +1,20 @@
+.wrap {
+    width: 5%;
+    margin-left: 12px;
+    margin-right: 16px;
+    display: none;
+  
+  }
+
+  .bar {
+    width: 40px;
+    height: 6px;
+    background-color: black;
+    margin: 6px 0px;
+}
+@media screen and (max-width:700px){
+.wrap{
+  display: block;
+  cursor: pointer;
+}
+}
