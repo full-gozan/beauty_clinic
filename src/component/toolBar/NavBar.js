@@ -1,5 +1,7 @@
  import React, { Component } from 'react';
  import './navBar.css'
+ import logo from './logo.png'; // Tell Webpack this JS file uses this image
+
  import MenuToggleButton from './MenuToggleButton'
  import {Link} from 'react-router-dom'
 
@@ -7,7 +9,8 @@
 <header className='toolbar'>
      <nav className='toolbar__navigation'>
           <MenuToggleButton  click={prop.slideClickHandler}/>
-          <div className='toolbar__logo'> <a href='#home'>LOGO </a> </div>
+
+          <div className='toolbar__logo'> <img src={logo}/> </div>
           <div className='spacer'></div>
           <div className='toolbar__navigation-items'>
                <ul>

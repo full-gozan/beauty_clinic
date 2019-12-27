@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import NavBar from'./toolBar/NavBar';
-import SlideOn from './slide_on/SlideOn'
-import Home from './pages/home'
-import Error from './pages/404'
-import Behandlinger from './pages/behandlinger'
-import Erbjudande from './pages/erbjudande'
-import Produkter from './pages/produkter'
-import OmOss from './pages/omoss'
-import Priser from './pages/priser'
+import NavBar from'./component/toolBar/NavBar';
+import SlideOn from './component/slide_on/SlideOn'
+import Home from './component/pages/home'
+import Error from './component/pages/404'
+import Behandlinger from './component/pages/behandlinger'
+import Erbjudande from './component/pages/erbjudande'
+import Produkter from './component/pages/produkter'
+import OmOss from './component/pages/omoss'
+import Priser from './component/pages/priser'
 import {BrowserRouter as Router,Route, Switch, Link,Redirect} from 'react-router-dom'
 
-class Header extends Component {
+class App extends Component {
   state={
     isSlideOpen:false
   }
@@ -45,8 +45,9 @@ if (this.state.isSlideOpen){
     <Route path ='/omoss' component={OmOss}/>
     <Route path ='/Priser' component={Priser}/>
 
-</Router>
-{ slide_on} 
+
+{ slide_on}
+ </Router>
    </div>
 
     );
@@ -54,4 +55,4 @@ if (this.state.isSlideOpen){
   }
 }
 
-export default Header;
+export default App;

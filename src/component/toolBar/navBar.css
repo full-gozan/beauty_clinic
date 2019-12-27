@@ -7,6 +7,9 @@
     left: 0%;
 
 }
+.toolbar__logo{
+    margin-left: 100px;
+}
 .spacer{
     flex: 1;
 }
@@ -16,15 +19,20 @@ display: flex;
 
 .toolbar__navigation-items ul{
     display: flex;
-    margin-left: 24px;
-    margin-right: 14px;
+    justify-content: space-around;
+}
+.toolbar__navigation-items{
+    margin-right: 80px;
 }
 .toolbar__navigation-items li{
 list-style: none;
-margin-left: 12px;
+margin-left: 22px;
+
+
 }
 .toolbar__navigation-items a{
     text-decoration: none;
+    font-size: 20px;
     }
     @media screen and (max-width:700px){
         .toolbar__navigation-items{
