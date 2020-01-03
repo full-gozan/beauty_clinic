@@ -1,16 +1,25 @@
+.icon-off{
+  height: 50px;
+  width: 50px;
+  display: block;
+
+}
 .crossIcon {
     width: 5%;
+    padding-top: 10px;
     margin-left: 12px;
     margin-right: 16px;
+    display: block;
+
   
   }
+
 
   .cross {
     width: 33px;
     height: 4px;
     background-color: black;
     margin: 6px 0px;
-    display: block;
  
   }
   #cross1{

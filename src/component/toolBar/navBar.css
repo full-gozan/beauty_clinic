@@ -10,6 +10,9 @@
 .toolbar__logo{
     margin-left: 100px;
 }
+.toolbar__logo img{
+width: 100px;
+height: 50px;}
 .spacer{
     flex: 1;
 }
