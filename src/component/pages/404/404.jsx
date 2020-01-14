@@ -1,5 +1,4 @@
 import React from'react'
-import './style/Home.css'
 const Error =props=>(
     <div>
         <div>

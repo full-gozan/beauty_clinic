@@ -1,5 +1,5 @@
 import React from'react'
-import './style/Home.css'
+import '../../style/Home.css'
 import { FaBeer } from 'react-icons/fa'; 
 
 const Erbjudande =props=>(
