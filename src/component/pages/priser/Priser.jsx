@@ -1,5 +1,5 @@
 import React from "react";
-import PriserList from "./PriserList";
+import PriserItem from "./PriserItem";
 import "../../style/Priser.css";
 
 const Priser = () => {
@@ -12,12 +12,10 @@ const Priser = () => {
     <div className="price-frame">
       <h1>Hello this is my behandlingar page</h1>
       <div>
-        <h3>
-          bn
-        </h3>
+        <h3>bn</h3>
         <table>
           <tbody>
-            <PriserList table={Table} />
+            <PriserItem table={Table} />
           </tbody>
         </table>
       </div>

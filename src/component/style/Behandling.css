@@ -1,0 +1,17 @@
+
+ .behandling img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  filter: grayscale(80%);
+}
+.behandling img:hover {
+  filter: none;
+}
+
+
+.behandling-container{
+display:flex
+
+}
+

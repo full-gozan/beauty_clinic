@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../../style/Priser.css'
  
-const PriserList =(props)=>{
+const PriserItem =(props)=>{
     
 return (
     
@@ -29,4 +29,4 @@ return (
 );
     
 }
-export default PriserList;
+export default PriserItem;
