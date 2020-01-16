@@ -21,7 +21,7 @@ const Behandlinger =props=>(
 <img src={beauty} style={{width:'100%' , height:'300px'}}/>  
 <h3>welcome to behandlinger department </h3>   
 
-       <div >
+       <div className="behandling-container">
                 <BehandlingItem src={treatment1}/>
                  <BehandlingItem src={treatment2}/>
                  <BehandlingItem src={treatment3}/>
