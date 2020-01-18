@@ -4,12 +4,12 @@ import "../../style/Behandling.css";
 
 const BehandlingItem = props => {
   return (
-      <div className="behandling">
-        <img src={props.src} />
-    {/*   <div className="behandlingInfo">
-        <h3>Here where put the description of the treatment of {props.src} </h3>
-        <Link to="google.com">Book Tid</Link>
-      </div> */} 
+    <div>
+      <Link to="/be">
+        <img src={props.src} className='behandling-image'/>
+        <p className='behandling-description'>here where should put your shithere where should put your shihere where should put your shihere where should put your shi</p>
+
+      </Link>
     </div>
   );
 };

@@ -1,12 +1,22 @@
 .price-frame{
-    margin: 60px 100px;
+    margin-top: 90px ;
+    width: 100%
 
 }
-.pris-container{
-    width: 300px;
-height: auto;
-margin-left: 20px;
-text-align: center;
-padding-bottom:21px;
-background-color: rgb(211, 168, 186);
+
+.price-table{
+width: 90%;
+max-width: 900px;
+height: 200px;
+font-size: 20px;
+margin-left:22px;
+border: 1px solid 
+}
+div td{
+padding-right: 20px
+}
+tr:nth-child(even){
+background-color: rgb(204, 204, 218);
+border: 1px solid 
+
 }

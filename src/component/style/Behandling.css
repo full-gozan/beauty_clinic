@@ -1,18 +1,25 @@
-.behandling img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 10px;
-  filter: grayscale(80%);
-}
-.behandling img:hover {
-  filter: none;
-}
-
 .behandling-container {
-  width: 100%;
   display: flex;
+  position: absolute;
   flex-wrap: wrap;
-justify-content: space-around;
-position: static;
-
+}
+.behandling-container div {
+  margin: 10px;
+}
+.behandling-image {
+  width: 300px;
+  height: 300px;
+}
+.behandling-description {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-top: -300px;
+}
+.behandling-image:hover {
+  filter: opacity(50%);
+}
+.behandling-image:hover ~ .behandling-description {
+  display: block;
 }
