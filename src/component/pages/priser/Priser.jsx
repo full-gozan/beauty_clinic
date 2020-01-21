@@ -2,22 +2,60 @@ import React from "react";
 import PriserItem from "./PriserItem";
 import "../../style/Priser.css";
 
-const Priser = () => {
-  const Table = [
-    { duration: "12555550min ", type: "microlidning", price: "220" },
-    { duration: "100min", type: "baby glow ", price: "112" }
-  ];
+class Priser extends React.Component {
+  state = {
+    title: ["name", "price"],
+    face: [
+      { name: "b-face1", price: "220" },
+      { name: "face2 ", price: "112" },
+      { name: "b-face3", price: "310" },
+      { name: "face4 ", price: "192" }
+    ],
+    hair: [
+      { name: "b-hair1", price: "220" },
+      { name: "hair2 ", price: "232" },
+      { name: "b-hair3", price: "380" },
+      { name: "-hair4 ", price: "182" }
+    ],
+    body: [
+      { name: "b-body1", price: "420" },
+      { name: "body2 ", price: "652" },
+      { name: "b-body3", price: "540" },
+      { name: "body4 ", price: "830" }
+    ]
+  };
 
-  return (
-    <div className="price-frame">
-      <h1>Hello this is my behandlingar page</h1>
-      <div className='price-container'>
-        <table className='price-table'>
+  renderTitle = () => {
+    let header = Object.keys(this.state.face[0]);
+    return header.map((key, index) => {
+      return <h3 key={index}>{key.toUpperCase()}</h3>;
+    });
+  };
 
-            <PriserItem table={Table}/>
-        </table>
+  render() {
+    return (
+      <div className="price-frame">
+        <h1>Hello this is my behandlingar page</h1>
+
+        <div className="price-container">
+          <h3 class="table-title">Face</h3>
+          <table className="price-table">
+            <tr>{this.renderTableHeader}</tr>
+            <PriserItem table={this.state.face} />
+          </table>
+
+          <h3 class="table-title">Hair</h3>
+          <table className="price-table">
+            <PriserItem table={this.state.hair} />
+          </table>
+
+          <h3 class="table-title">Body</h3>
+          <table className="price-table">
+            <PriserItem table={this.state.body} />
+          </table>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 export default Priser;

@@ -1,22 +1,24 @@
-.price-frame{
-    margin-top: 90px ;
-    width: 100%
-
+.price-frame {
+  margin-top: 90px;
+  width: 100%;
 }
 
-.price-table{
-width: 90%;
-max-width: 900px;
-height: 200px;
-font-size: 20px;
-margin-left:22px;
-border: 1px solid 
+.price-table {
+  width: 90%;
+  max-width: 900px;
+  height: 200px;
+  font-size: 20px;
+  margin-left: 22px;
+  border: 1px solid;
 }
-div td{
-padding-right: 20px
+button {
+  margin: 35px -40px 0px 0px;
 }
-tr:nth-child(even){
-background-color: rgb(204, 204, 218);
-border: 1px solid 
-
+tr:nth-child(even) {
+  background-color: rgba(204, 204, 219, 0.212);
+}
+.table-title {
+  margin-left: 47%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+color: blue;
 }
