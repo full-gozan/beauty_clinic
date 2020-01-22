@@ -1,25 +1,59 @@
-.behandling-container {
-  display: flex;
-  position: absolute;
-  flex-wrap: wrap;
+.behandling-page {
+  background-color: burlywood;
 }
-.behandling-container div {
-  margin: 10px;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+.page-welcome {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(216, 100, 100);
+  font-family: "Times New Roman", Times, serif;
+}
+.behandling-container {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 .behandling-image {
   width: 300px;
   height: 300px;
-}
-.behandling-description {
-  display: none;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  margin-top: -300px;
-}
-.behandling-image:hover {
-  filter: opacity(50%);
-}
-.behandling-image:hover ~ .behandling-description {
   display: block;
+}
+.behandling-image :nth-child(odd) {
+  flex-grow: 1;
+}
+.behandling-image :nth-child(even) {
+  flex-grow: 2;
+}
+
+.behandling-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(157, 167, 170);
+}
+.behandling-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.behandling-container:hover .behandling-info {
+  opacity: 1;
 }

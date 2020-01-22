@@ -2,7 +2,6 @@ import  React from 'react';
 import './SlideOn.css'
 import MenuToggleButtonOff from'./MenuToggleButtonOff'
 import {Link} from 'react-router-dom'
-
 const SlideOn =prop=>(
 <div className='slidebar' > 
 <div>
@@ -14,11 +13,7 @@ const SlideOn =prop=>(
                     <li> <Link to ='erbjudande'>ERBJUDANDEN </Link></li>
                     <li> <Link to ='produkter'>PRODUKTER </Link></li>
                     <li> <Link to ='omoss'>OM OSS </Link></li>
-
                </ul>
        </div>
-      
-       
-
 );
 export default SlideOn;

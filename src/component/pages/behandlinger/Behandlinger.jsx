@@ -14,12 +14,18 @@ import treatment11 from "../../images/treatment11.jpg";
 import treatment12 from "../../images/treatment12.jpg";
 
 const Behandlinger = props => (
-  <div>
-    <div style={{ marginTop: "80px" }}>
+  <div className="behandling-page">
+    
+    <div >
       <img src={beauty} style={{ width: "100%", height: "300px" }} />
+      
+    <div className="page-welcome">
       <h3>welcome to behandlinger department </h3>
+      </div>
+      </div>
 
-      <div className="behandling-container">
+
+      <div className="container">
         <BehandlingItem src={treatment1} />
         <BehandlingItem src={treatment2} />
         <BehandlingItem src={treatment3} />
@@ -32,7 +38,6 @@ const Behandlinger = props => (
         <BehandlingItem src={treatment11} />
         <BehandlingItem src={treatment12} />
       </div>
-    </div>
   </div>
 );
 export default Behandlinger;

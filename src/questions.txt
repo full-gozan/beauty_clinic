@@ -1,0 +1,5 @@
+* style the classes is overriding every components even if does not imort it.
+* the pages contents slide over the fixed position header why?
+* flex-grow does not work
+*how to  textDecoration the Link
+

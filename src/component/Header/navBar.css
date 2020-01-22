@@ -33,6 +33,10 @@ margin-left: 22px;
 
 
 }
+.ring-oss{
+    visibility: hidden;
+margin-right: 80px;
+}
 .toolbar__navigation-items a{
     text-decoration: none;
     font-size: 20px;
@@ -40,6 +44,9 @@ margin-left: 22px;
     @media screen and (max-width:700px){
         .toolbar__navigation-items{
           display: none;
+        }
+        .ring-oss{
+visibility:visible;
         }
         }
 
