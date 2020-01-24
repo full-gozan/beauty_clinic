@@ -1,11 +1,20 @@
-.footer-container{
-display: flex;
-justify-content: space-between;
-
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
-li{
-list-style-type: none;
-font-size: 20px;
-text-decoration-line: none;
- textDecoration: none;
+li {
+  list-style-type: none;
+  font-size: 20px;
+  text-decoration-line: none;
+  textdecoration: none;
+}
+@media screen and (max-width: 800px) {
+  .footer-links {
+    display: none;
+  }
+  .footer-follow {
+text-align: center  }
+.footer-container{
+margin-top: 40px
+}
 }

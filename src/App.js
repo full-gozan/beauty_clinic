@@ -37,19 +37,20 @@ class App extends Component {
     if (this.state.isSlideOpen) {
       slide_on = <SlideOn slideHideHandlar={this.slideHideHandlar} />;
     }
-    
+
     return (
       <div style={{ height: "100%" }}>
         <Router>
           <NavBar slideClickHandler={this.slideClickHandler} />
-
-          <Route path="/error" component={Error} />
-          <Route path="/Behandlinger" component={Behandlinger} />
-          <Route path="/Erbjudande" component={Erbjudande} />
-          <Route path="/Produkter" component={Produkter} />
-          <Route path="/omoss" component={OmOss} />
-          <Route path="/Priser" component={Priser} />
-          <Route component={Home} />
+          <div style={{ height: "100%", maxWidth: "1250px"}}>
+            <Route path="/error" component={Error} />
+            <Route path="/Behandlinger" component={Behandlinger} />
+            <Route path="/Erbjudande" component={Erbjudande} />
+            <Route path="/Produkter" component={Produkter} />
+            <Route path="/omoss" component={OmOss} />
+            <Route path="/Priser" component={Priser} />
+            <Route component={Home} />
+          </div>
 
           {slide_on}
         </Router>

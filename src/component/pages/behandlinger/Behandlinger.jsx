@@ -15,7 +15,7 @@ import treatment12 from "../../images/treatment12.jpg";
 
 const Behandlinger = props => (
   <div className="behandling-page">
-    
+    <div className='x'>
     <div >
       <img src={beauty} style={{ width: "100%", height: "300px" }} />
       
@@ -38,6 +38,8 @@ const Behandlinger = props => (
         <BehandlingItem src={treatment11} />
         <BehandlingItem src={treatment12} />
       </div>
+    </div>
+   
   </div>
 );
 export default Behandlinger;

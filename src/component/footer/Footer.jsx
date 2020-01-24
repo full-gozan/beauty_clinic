@@ -9,7 +9,6 @@ import FollowAt from "react-social-media-follow";
 const links = [
   "https://twitter.com/",
   "https://www.facebook.com/",
-  "https://www.youtube.com/",
   "https://www.instagram.com/"
 ];
 
@@ -49,9 +48,8 @@ class Footer extends React.Component {
               </li>
             </ul>
           </div>
-          <div className="footer-follow" />
-          <div className="footer-contact">
-            <h3>contact us</h3>
+
+          <div className="footer-follow">
             <ul>
               <li>
                 <FaMobileAlt /> 07000000000

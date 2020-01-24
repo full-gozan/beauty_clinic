@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./navBar.css";
-import Logo from "../images/Logo.svg";
 import MenuToggleButton from "./MenuToggleButton";
 import { Link } from "react-router-dom";
 
@@ -28,10 +27,7 @@ const NavBar = prop => (
             {" "}
             <Link to="erbjudande">ERBJUDANDEN </Link>
           </li>
-          <li>
-            {" "}
-            <Link to="produkter">PRODUKTER </Link>
-          </li>
+
           <li>
             {" "}
             <Link to="omoss">OM OSS </Link>

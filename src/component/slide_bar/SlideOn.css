@@ -1,7 +1,7 @@
 .slidebar {
     top: 0;
     left: 0;
-    width: 40%;
+    width: 80%;
     max-width: 400px;
     position: fixed;
     background-color: rgb(54, 92, 92);
@@ -19,7 +19,7 @@
 
 }
 
-.slidebar li{
+.slidebar li{                       
     list-style: none;
     margin-top: 40px;
 }
