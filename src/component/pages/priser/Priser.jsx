@@ -15,7 +15,7 @@ class Priser extends React.Component {
       { name: "b-hair1", price: "220" },
       { name: "hair2 ", price: "232" },
       { name: "b-hair3", price: "380" },
-      { name: "-hair4 ", price: "182" }
+      { name: "hair4 ", price: "182" }
     ],
     body: [
       { name: "b-body1", price: "420" },

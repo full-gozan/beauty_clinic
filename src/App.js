@@ -9,13 +9,8 @@ import Erbjudande from "./component/pages/erbjudande/Erbjudande";
 import Produkter from "./component/pages/produkter/Produkter";
 import OmOss from "./component/pages/omoss/Omoss";
 import Priser from "./component/pages/priser/Priser";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Link,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   state = {
@@ -33,7 +28,6 @@ class App extends Component {
 
   render() {
     let slide_on;
-    let slide_off;
     if (this.state.isSlideOpen) {
       slide_on = <SlideOn slideHideHandlar={this.slideHideHandlar} />;
     }
@@ -42,14 +36,14 @@ class App extends Component {
       <div style={{ height: "100%" }}>
         <Router>
           <NavBar slideClickHandler={this.slideClickHandler} />
-          <div style={{ height: "100%", maxWidth: "1250px"}}>
+          <div style={{ textAlign: "center", maxWidth: "1350px" }}>
             <Route path="/error" component={Error} />
             <Route path="/Behandlinger" component={Behandlinger} />
             <Route path="/Erbjudande" component={Erbjudande} />
             <Route path="/Produkter" component={Produkter} />
             <Route path="/omoss" component={OmOss} />
             <Route path="/Priser" component={Priser} />
-            <Route component={Home} />
+            <Route path="/" component={Home} exact />
           </div>
 
           {slide_on}

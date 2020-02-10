@@ -7,11 +7,11 @@ const NavBar = prop => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       <MenuToggleButton click={prop.slideClickHandler} />
-
-      <div className="toolbar__logo">
+<Link to='/'><div className="toolbar__logo">
         {" "}
         <img src={"https://s.cdpn.io/3/kiwi.svg"} />{" "}
-      </div>
+      </div></Link>
+      
       <div className="spacer" />
       <div className="toolbar__navigation-items">
         <ul>

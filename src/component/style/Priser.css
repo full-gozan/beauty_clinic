@@ -20,5 +20,5 @@ tr:nth-child(even) {
 .table-title {
   margin-left: 47%;
   font-family: Georgia, "Times New Roman", Times, serif;
-color: blue;
+  color: blue;
 }

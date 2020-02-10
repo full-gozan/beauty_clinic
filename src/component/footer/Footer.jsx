@@ -22,29 +22,16 @@ class Footer extends React.Component {
             <h3>important links</h3>
             <ul>
               <li>
-                <Link style={{ textDecoration: "none" }} to="/Home">
-                  link 1{" "}
-                </Link>
+                <Link to="/Home">Erbjudande </Link>
               </li>
               <li>
-                <Link style={{ textDecoration: "none" }} to="/Home">
-                  link 2{" "}
-                </Link>
+                <Link to="/Home">Bok Tid</Link>
               </li>
               <li>
-                <Link style={{ textDecoration: "inherit" }} to="/Home">
-                  link 3{" "}
-                </Link>
+                <Link to="/Home">Vi Är Vi </Link>
               </li>
               <li>
-                <Link style={{ textDecoration: "inherit" }} to="/Home">
-                  link 4{" "}
-                </Link>
-              </li>
-              <li>
-                <Link style={{ textDecoration: "inherit" }} to="/Home">
-                  link 5{" "}
-                </Link>
+                <Link to="/Home">Produker </Link>
               </li>
             </ul>
           </div>
@@ -57,7 +44,7 @@ class Footer extends React.Component {
               <li>
                 <h3>
                   <GoLocation />
-                  Bokgaran 26, Malmö
+                  Bokgatan 26, Malmö
                 </h3>
               </li>
 
