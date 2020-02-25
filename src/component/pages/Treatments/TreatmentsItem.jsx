@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../style/Behandling.css";
+import "../../style/Treatments.css";
 
-const BehandlingItem = props => {
+const TreatmentsItem = props => {
   return (
     <div className="behandling-container">
 <Link><div className='behandling-image'>    
@@ -22,4 +22,4 @@ const BehandlingItem = props => {
     </div>
   );
 };
-export default BehandlingItem;
+export default TreatmentsItem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import './MenuToggleButton.css'
+import './navBar.css'
 const MenuToggleButton=props=>(
     <div className="wrap" onClick={props.click}>
 <div className="bar" id='bar1'></div>

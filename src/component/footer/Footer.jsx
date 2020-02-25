@@ -2,7 +2,6 @@ import React from "react";
 import "../style/footer.css";
 import { Link } from "react-router-dom";
 import { FaMobileAlt } from "react-icons/fa";
-import { GoLocation } from "react-icons/go";
 
 import FollowAt from "react-social-media-follow";
 
@@ -15,23 +14,22 @@ const links = [
 class Footer extends React.Component {
   render() {
     return (
-      <div>
-        <hr />
         <div className="footer-container ">
+
           <div className="footer-links">
             <h3>important links</h3>
             <ul>
               <li>
-                <Link to="/Home">Erbjudande </Link>
+                <Link to="/Home">Offers </Link>
               </li>
               <li>
-                <Link to="/Home">Bok Tid</Link>
+                <Link to="/Home">Book time </Link>
               </li>
               <li>
-                <Link to="/Home">Vi Är Vi </Link>
+                <Link to="/Home">Who we are </Link>
               </li>
               <li>
-                <Link to="/Home">Produker </Link>
+                <Link to="/Home">Products </Link>
               </li>
             </ul>
           </div>
@@ -43,7 +41,6 @@ class Footer extends React.Component {
               </li>
               <li>
                 <h3>
-                  <GoLocation />
                   Bokgatan 26, Malmö
                 </h3>
               </li>
@@ -54,7 +51,6 @@ class Footer extends React.Component {
             </ul>
           </div>
         </div>
-      </div>
     );
   }
 }

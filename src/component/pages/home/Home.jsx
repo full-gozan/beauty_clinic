@@ -1,13 +1,18 @@
 import React, { Component } from "react";
-import SlidePanel from "./SlidePanel";
-import "../../style/Home.css";
-import Panel from "./Panel";
+import "../../style/Home/Home.css";
+import TreatmentInterface from "./TreatmentInterface";
+import Introduction from "./Introduction";
+import Links from "./Links";
+import Map from "./Map";
 
 class Home extends Component {
   render() {
     return (
       <div class="home">
-        <SlidePanel />
+        <Introduction />
+        <Links />
+        <TreatmentInterface />
+        <Map />
       </div>
     );
   }
