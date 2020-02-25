@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style/Home.css";
 import { FaBeer } from "react-icons/fa";
 import "../../style/erbjudande.css";
 import treatment1 from "../../images/treatment1.jpg";

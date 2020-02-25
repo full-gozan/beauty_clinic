@@ -8,11 +8,11 @@ const SlideOn =prop=>(
        <MenuToggleButtonOff  click={prop.slideHideHandlar}/>
 </div>
 <ul onClick= {prop.slideHideHandlar}>
-                    <li> <Link to ='Behandlinger'>Behandlinger </Link></li>
-                    <li> <Link to ='Priser'>PRISER </Link></li>
-                    <li> <Link to ='erbjudande'>ERBJUDANDEN </Link></li>
-                    <li> <Link to ='produkter'>PRODUKTER </Link></li>
-                    <li> <Link to ='omoss'>OM OSS </Link></li>
+
+                     <li > <Link to ='About_us' className="slide-link">About Us </Link></li>
+                    <li> <Link to ='Treatments' className="slide-link">Treatments </Link></li>
+                    <li> <Link to ='Priser' className="slide-link">Prices </Link></li>
+                    <li> <Link to ='erbjudande' className="slide-link">Offers </Link></li>
                </ul>
        </div>
 );

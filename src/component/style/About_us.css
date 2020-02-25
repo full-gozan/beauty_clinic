@@ -1,0 +1,85 @@
+.fp-tableCell {
+  vertical-align: top;
+}
+.about-container {
+  display: flex;
+  flex-flow: column;
+  margin: 180px 10px 100px 10px;
+}
+.about-brand {
+  display: flex;
+  flex-flow: column;
+
+  margin: 0px 40px 60px 20px;
+}
+
+.brand img {
+  width: 600px;
+  height: 300px;
+}
+
+.brand-brief {
+  font-family: brandon-grotesque;
+  color: rgba(0, 0, 0, 0.6);
+}
+.brand-brief h3 {
+  color: red;
+}
+
+.about-personal {
+  display: flex;
+  margin: 0px 40px 60px 20px;
+}
+.personal img {
+  width: 60%;
+}
+.personal-brief {
+  font-family: brandon-grotesque;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 20%;
+}
+
+.personal-brief h3 {
+  text-align: left;
+}
+@media screen and (min-width: 1000px) {
+  .about-brand {
+    display: flex;
+    flex-flow: row;
+    margin: 0px 40px 60px 20px;
+  }
+  .brand {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .brand img {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+  }
+  .brand-brief {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brand img {
+    width: 100%;
+
+  }
+  .brand-brief {
+    width: 100%;
+  }
+  .about-personal {
+    flex-flow: column;
+  }
+  .personal img {
+    width: 200px;
+    height: 250px;
+  }
+  .personal-brief {
+    width: 100%;
+  }
+  .personal-brief h3{
+text-align:center  }
+}
