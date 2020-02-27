@@ -6,21 +6,21 @@ class Priser extends React.Component {
   state = {
     title: ["name", "price"],
     face: [
-      { name: "b-face1", price: "220" },
+      { name: "face1", price: "220" },
       { name: "face2 ", price: "112" },
-      { name: "b-face3", price: "310" },
+      { name: "face3", price: "310" },
       { name: "face4 ", price: "192" }
     ],
     hair: [
-      { name: "b-hair1", price: "220" },
+      { name: "hair1", price: "220" },
       { name: "hair2 ", price: "232" },
-      { name: "b-hair3", price: "380" },
+      { name: "hair3", price: "380" },
       { name: "hair4 ", price: "182" }
     ],
     body: [
-      { name: "b-body1", price: "420" },
+      { name: "body1", price: "420" },
       { name: "body2 ", price: "652" },
-      { name: "b-body3", price: "540" },
+      { name: "body3", price: "540" },
       { name: "body4 ", price: "830" }
     ]
   };
@@ -35,8 +35,6 @@ class Priser extends React.Component {
   render() {
     return (
       <div className="price-frame">
-        <h1>Hello this is my behandlingar page</h1>
-
         <div className="price-container">
           <h3 class="table-title">Face</h3>
           <table className="price-table">

@@ -14,10 +14,12 @@ const links = [
 class Footer extends React.Component {
   render() {
     return (
+      
         <div className="footer-container ">
+          
 
           <div className="footer-links">
-            <h3>important links</h3>
+            <h3>Important Links</h3>
             <ul>
               <li>
                 <Link to="/Home">Offers </Link>
@@ -36,9 +38,7 @@ class Footer extends React.Component {
 
           <div className="footer-follow">
             <ul>
-              <li>
-                <FaMobileAlt /> 07000000000
-              </li>
+             
               <li>
                 <h3>
                   Bokgatan 26, Malmö
