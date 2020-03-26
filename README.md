@@ -2,7 +2,7 @@
 
 ### Demo
 
-Open [this click ](https://p8g9g.csb.app/) to view the Demo.
+Open [this click ](https://p8g9g.codesandbox.io/) to view the Demo.
 
 ### About the project
 
