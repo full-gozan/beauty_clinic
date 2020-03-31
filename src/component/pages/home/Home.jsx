@@ -1,20 +1,45 @@
-import React, { Component } from "react";
-import "../../style/Home/Home.css";
+import React from "react";
+import "./style/Home/Home.css";
 import TreatmentInterface from "./TreatmentInterface";
 import Introduction from "./Introduction";
 import Links from "./Links";
-import Map from "./Map";
+import Offer from "./Offer";
+import ReactFullpage from "@fullpage/react-fullpage";
 
-class Home extends Component {
-  render() {
+
+
+const Home=()=>{
     return (
-      <div class="home">
-        <Introduction />
-        <Links />
-        <TreatmentInterface />
-        <Map />
+      <div>
+   <Introduction />
+      <Links/>
+      <TreatmentInterface />
+      <Offer/>
       </div>
+   
+     /*  <ReactFullpage
+        anchors={["welcome-panel", "work-links", "most-demand-treatments","current-offers"]}
+        render={() => {
+          return (
+            <div id="fullpage-wrapper">
+              <div className="section ">
+                <Introduction />
+              </div>
+              <div className="section">
+                <Links />
+              </div>
+              <div className="section">
+                <TreatmentInterface />
+              </div>
+              <div className="section">
+                <Offer />
+              </div>
+            </div>
+          );
+        }}
+      /> */
     );
   }
-}
+
+
 export default Home;
