@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./navBar.css";
-import MenuToggleButton from "./MenuToggleButton";
+import HamburgerMenu from "../component/hamburgerMenu"
 import { Link } from "react-router-dom";
 import logo from '../images/logo.jpg'
 import FollowAt from "react-social-media-follow";
@@ -13,8 +13,7 @@ const links = [
 
 const NavBar = prop => (
   <header className="toolbar">
-    <MenuToggleButton click={prop.slideClickHandler} />
-
+    <HamburgerMenu click={prop.slideClickHandler} />
     <nav className="toolbar__navigation">
       <div className="toolbar__navigation_contact">
 
@@ -25,7 +24,7 @@ const NavBar = prop => (
       </div>
       <Link to="/">
         <div className="toolbar__navigation_logo">
-          <img src={logo} />{" "}
+          <img src={logo} alt="not found"/>
         </div>
       </Link>
 
@@ -38,19 +37,14 @@ const NavBar = prop => (
           </li>
 
           <li>
-            <Link to="Priser"> <h4  className="link">Prices</h4> </Link>
+            <Link to="Prices"> <h4  className="link">Prices</h4> </Link>
           </li>
 
          
         </ul>
       </div>
     </nav>
-    {/* <div className="ring-oss">
-      <h3>ring oss</h3>
-      <h3>
-        <a href="tel:123-456-7890">0708080080</a>
-      </h3>
-    </div> */}
+ 
   </header>
 );
 

@@ -1,8 +1,8 @@
 .links-container {
   width: 100%;
-  height: 900px;
   background-image: url("https://i.picsum.photos/id/1056/3988/2720.jpg");
-  margin: 80px 0px;
+  
+ 
 }
 
 .links-images {
@@ -20,6 +20,13 @@
   width: 100%;
   height: 100%;
   position: relative;
+
+}
+.links-image:hover {
+ transform: scale(1.05);
+transition: transform  .2s ease-in-out; 
+border: 3px solid gray
+
 }
 .links-image h3 {
   position: absolute;

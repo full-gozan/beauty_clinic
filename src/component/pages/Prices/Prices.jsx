@@ -1,8 +1,8 @@
 import React from "react";
-import PriserItem from "./PriserItem";
-import "../../style/Priser.css";
+import PriceItem from "./PriceItem";
+import "./Prices.css";
 
-class Priser extends React.Component {
+class Prices extends React.Component {
   state = {
     title: ["name", "price"],
     face: [
@@ -39,21 +39,21 @@ class Priser extends React.Component {
           <h3 class="table-title">Face</h3>
           <table className="price-table">
             <tr>{this.renderTableHeader}</tr>
-            <PriserItem table={this.state.face} />
+            <PriceItem table={this.state.face} />
           </table>
 
           <h3 class="table-title">Hair</h3>
           <table className="price-table">
-            <PriserItem table={this.state.hair} />
+            <PriceItem table={this.state.hair} />
           </table>
 
           <h3 class="table-title">Body</h3>
           <table className="price-table">
-            <PriserItem table={this.state.body} />
+            <PriceItem table={this.state.body} />
           </table>
         </div>
       </div>
     );
   }
 }
-export default Priser;
+export default Prices;
