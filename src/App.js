@@ -5,10 +5,9 @@ import Footer from "./component/footer/Footer";
 import Home from "./component/pages/home/Home";
 import Error from "./component/pages/404/404";
 import Treatments from "./component/pages/Treatments/Treatments";
-import Erbjudande from "./component/pages/erbjudande/Erbjudande";
-import Produkter from "./component/pages/produkter/Produkter";
+import Offers from "./component/pages/Offers/Offers";
 import About_us from "./component/pages/About_us/About_us";
-import Priser from "./component/pages/priser/Priser";
+import Prices from "./component/pages/Prices/Prices";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -35,16 +34,15 @@ class App extends Component {
     return (
       <div style={{ height: "100%" }}>
         <Router>
-         <NavBar slideClickHandler={this.slideClickHandler} />
-          <div style={{ textAlign: "center"}}>
+          <NavBar slideClickHandler={this.slideClickHandler} />
+          <div style={{ textAlign: "center" }}>
             <Route path="/error" component={Error} />
             <Route path="/Treatments" component={Treatments} />
-            <Route path="/Erbjudande" component={Erbjudande} />
-            <Route path="/Produkter" component={Produkter} />
+            <Route path="/Offers" component={Offers} />
             <Route path="/About_us" component={About_us} />
-            <Route path="/Priser" component={Priser} />
+            <Route path="/Prices" component={Prices} />
             <Route path="/" component={Home} exact />
-          </div> 
+          </div>
 
           {slide_on}
         </Router>
